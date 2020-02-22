@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _HomeState();
-  }
+  _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {

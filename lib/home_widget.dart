@@ -16,7 +16,15 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('mheecha')),
+      appBar: AppBar(
+        title: Image.asset(
+          'images/mheecha_logo.png',
+          height: 48.0,
+          width: 36.0,
+        ),
+        backgroundColor: Colors.white,
+        titleSpacing: 8.0,
+      ),
       body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

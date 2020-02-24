@@ -28,7 +28,7 @@ class _ProfileState extends State<Profile> {
                 bottom: -4.0,
                 right: -24.0,
                 child: FlatButton(
-                  color: Colors.green[400],
+                  color: Color(0xff0B91E0),
                   onPressed: () {
                     showDialog(
                       context: context,
@@ -55,7 +55,7 @@ class _ProfileState extends State<Profile> {
           FlatButton(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(18.0),
-              side: BorderSide(color: Colors.green),
+              side: BorderSide(color: Color(0xff0B91E0)),
             ),
             onPressed: () {},
             child: Text('PRO'),

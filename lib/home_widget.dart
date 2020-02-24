@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mheecha/profile_widget.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -7,10 +8,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
-  static const List<Widget> _children = <Widget>[
+  static List<Widget> _children = <Widget>[
     Text('Home'),
     Text('Messages'),
-    Text('Profile'),
+    new Profile(),
   ];
 
   @override
@@ -18,7 +19,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(
-          'images/mheecha_logo.png',
+          'assets/images/mheecha_logo.png',
           height: 48.0,
           width: 36.0,
         ),

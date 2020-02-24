@@ -40,7 +40,11 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets: 
-    - images/
+    - assets/images/
+  fonts:
+    - family: Acme
+      fonts:
+        - asset: assets/fonts/Acme-Regular.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mheecha/exchange_rate_widget.dart';
 import 'package:mheecha/profile_widget.dart';
 
 class Home extends StatefulWidget {
@@ -90,8 +91,10 @@ class _HomeState extends State<Home> {
                 ),
               ),
               onTap: () {
-                // TODO Navigate based on List tap
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ExchangeRate()),
+                );
               },
             ),
           ],
@@ -102,11 +105,9 @@ class _HomeState extends State<Home> {
         currentIndex: _currentIndex,
         onTap: onTabTapped,
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.mail), title: Text('Messages')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Profile'))
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('')),
+          BottomNavigationBarItem(icon: Icon(Icons.mail), title: Text('')),
+          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text(''))
         ],
       ),
     );
